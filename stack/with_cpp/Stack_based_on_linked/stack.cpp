@@ -5,6 +5,10 @@ stack::stack():size(0),top(NULL) {
 
 }
 
+stack::~stack()
+{
+    stack::ClearStack();
+}
 
 void stack::Push(int e) {
     StackNode * pn=(StackNode*)malloc(sizeof(StackNode));
